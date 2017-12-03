@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Succes_Email";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="topbar" class="row wrapper border-bottom white-bg page-heading" style="border-bottom: 0px solid #e7eaec !important">
+    <ol class="breadcrumb">
+        <li>
+            @*<a href="index.html">Home</a>*@
+        </li>
+        <li class="active">
+            <strong>Widgets</strong>
+        </li>
+    </ol>
+</div>
+<br />
+<br />
+<br /><br />
+<br />
+<br />
+@if (ViewBag.emailsuccess != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            swal("Successfully", "Email Send", "success");
+        }
+    </script>
+}
+<div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10">
+       
+
+
+
+       
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <img src="~/img/succes_email.jpg" />
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+
+
+
+
+
+        @*</div>*@
+        @*<div class="col-lg-1">
+
+            </div>*@
+    </div>
+
+    <div class="col-lg-1">
+
+    </div>
+</div>

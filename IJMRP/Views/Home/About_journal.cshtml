@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "About_journal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="topbar" class="row wrapper border-bottom white-bg page-heading" style="border-bottom: 0px solid #e7eaec !important">
+    <h2>Widgets</h2>
+    <ol class="breadcrumb">
+        @*<li>
+                <a href="index.html">Home</a>
+            </li>*@
+        @*<li class="active">
+                <strong>Widgets</strong>
+            </li>*@
+    </ol>
+</div>
+<div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10">
+        @if (@ViewBag.About_the_Journal != null)
+        {
+            @ViewBag.About_the_Journal
+        }
+    </div>
+
+    <div class="col-lg-1">
+
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10">
+        @*<h3 style="color:#800000">Peer Review Process</h3><br/>*@
+        <center><img src="~/img/About_Journal.jpg" /></center>
+    </div>
+
+    <div class="col-lg-1">
+
+    </div>
+</div>

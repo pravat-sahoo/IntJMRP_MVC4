@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Guide_Author";
+}
+@*<script>
+    $(document).ready(function () {
+        ('#topBar').removeAttr("")
+    })
+</script>*@
+@*<h2>Guide_Author</h2>*@
+<div id="topbar" class="row wrapper border-bottom white-bg page-heading" style="border-bottom: 0px solid #e7eaec !important">
+    <h2>Widgets</h2>
+    <ol class="breadcrumb">
+        @*<li>
+                <a href="index.html">Home</a>
+            </li>*@
+        @*<li class="active">
+                <strong>Widgets</strong>
+            </li>*@
+    </ol>
+</div>
+<div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10">
+        @if(@ViewBag.Guide_For_Author!=null)
+        {
+            @ViewBag.Guide_For_Author
+        }
+    </div>
+
+    <div class="col-lg-1">
+
+    </div>
+</div>
