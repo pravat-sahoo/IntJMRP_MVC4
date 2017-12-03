@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Archive";
+}
+
+
+@model IEnumerable<IJMRP.Models.tblArchive>
+
+
+
+<div id="topbar" class="row wrapper border-bottom white-bg page-heading" style="border-bottom: 0px solid #e7eaec !important">
+    <ol class="breadcrumb">
+        <li>
+            @*<a href="index.html">Home</a>*@
+        </li>
+        <li class="active">
+            <strong>Widgets</strong>
+        </li>
+    </ol>
+</div>
+<br />
+<br />
+<br /><br />
+<br />
+<br />
+
+<div class="row">
+    <div class="col-lg-2">
+
+    </div>
+    <div id="AH" class="col-lg-8">
+        <div class="ibox-content">
+
+            <div class="feed-activity-list">
+                @{ int i = 0, y1, y2 = 0;
+                 if (Model == null)
+                 {
+                    <h1>Under Publishe</h1>
+                 }
+                 foreach (var item in Model)
+                 {
+
+                     y1 = int.Parse(item.ARCHIVE_YEAR.Value.Year.ToString());
+                     if (i == 0)
+                     {
+                         y2 = int.Parse(item.ARCHIVE_YEAR.Value.Year.ToString());
+                                         <span style="color:blueviolet">@y1</span> 
+
+
+                     }
+                     if (y1 == y2)
+                     {
+
+                         <div class="feed-element">
+                             @Html.ActionLink(@item.ARCHIVE_DETAILS.ToUpper(), "Currentissue_Archive", "Home", new { bid = @item.ARCHIVE_DETAILS }, null)
+                             @if (@item.ARCHIVE_FILE != null)
+                             {
+                                 <span class="label label-danger pull-right btn btn-xs"><i class="fa fa-lg fa-download" aria-hidden="true"></i><a download href=@item.ARCHIVE_FILE.Substring(1, @item.ARCHIVE_FILE.Length-1)>Download</a></span>;
+
+                             }
+
+                        
+                             </div>
+
+                     }
+                     else
+                     {
+                                                                 <span style="color:blueviolet">@y1</span> 
+
+                            <div class="feed-element">
+                                @Html.ActionLink(@item.ARCHIVE_DETAILS.ToUpper(), "Currentissue_Archive", "Home", new { bid = @item.ARCHIVE_DETAILS }, null)
+                                @if (@item.ARCHIVE_FILE != null)
+                                {
+                                    <span class="label label-danger pull-right btn btn-xs"><i class="fa fa-lg fa-download" aria-hidden="true"></i><a download href=@item.ARCHIVE_FILE.Substring(1, @item.ARCHIVE_FILE.Length-1)>Download</a></span>;
+
+                                }
+
+
+                            </div>
+                     }
+
+                     y2 = y1;
+                     i++;
+                 }
+                }
+
+
+
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>

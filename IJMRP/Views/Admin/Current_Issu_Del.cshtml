@@ -1,0 +1,73 @@
+﻿@model IEnumerable<IJMRP.Models.tblCurrentIssue>
+
+@{
+    ViewBag.Title = "Current_Issu_Del";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+
+@using (Html.BeginForm()) {
+    
+    <div id="AH" class="col-lg-10">
+        <div class="ibox-content">
+
+            <div class="feed-activity-list">
+
+                @{ int i = 0, y1, y2 = 0;
+           if (Model==null)
+           {
+            <h1>Under Publishe</h1>
+           }
+
+           foreach (var item in Model)
+           {
+
+               y1 = int.Parse(item.CURENTISSUE_DATE.Value.Year.ToString());
+               if (i == 0)
+               {
+                   y2 = int.Parse(item.CURENTISSUE_DATE.Value.Year.ToString());
+                <span style="color:blueviolet">@y1</span> 
+
+            }
+            if (y1 == y2)
+            {
+            <div class="feed-element">
+                @item.CURENTISSUE_NAME
+                <span class="label label-danger pull-right btn btn-xs">
+                    <i class="fa fa-lg fa-ban" aria-hidden="true"></i><span>&nbsp;&nbsp;</span>@Html.ActionLink("Delete", "Current_Issu_Del2", "Admin", new { bid = @item.CURENTISSUE_ID }, null)
+                </span>
+
+
+            </div>
+
+
+
+            }
+            else
+            {
+                            <span style="color:blueviolet">@y1</span> 
+
+            <div class="feed-element">
+                @item.CURENTISSUE_NAME
+                <span class="label label-danger pull-right btn btn-xs">
+                   <i class="fa fa-lg fa-ban" aria-hidden="true"> </i><span>&nbsp;&nbsp;</span>@Html.ActionLink("Delete", "Current_Issu_Del2", "Admin", new { bid = @item.CURENTISSUE_ID }, null)
+                </span>
+
+
+            </div>
+            }
+
+            y2 = y1;
+            i++;
+            }
+                }
+
+
+
+            </div>
+            </div>
+
+        </div>
+       
+}
+    

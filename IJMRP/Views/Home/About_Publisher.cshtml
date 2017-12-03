@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "About_Publisher";
+}
+
+<div id="topbar" class="row wrapper border-bottom white-bg page-heading" style="border-bottom: 0px solid #e7eaec !important">
+    <h2>Widgets</h2>
+    <ol class="breadcrumb">
+        @*<li>
+                <a href="index.html">Home</a>
+            </li>*@
+        @*<li class="active">
+                <strong>Widgets</strong>
+            </li>*@
+    </ol>
+</div>
+<div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10">
+        @if (@ViewBag.About_Pub != null)
+        {
+            @ViewBag.About_Pub
+        }
+    </div>
+
+    <div class="col-lg-1">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10">
+        <div class="row">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-5">
+                <h2><span style="color:#8B4513"><strong><u>Our Office Address: </u></strong></span></h2>
+
+                <p>Kharagpur ECODEV</p>
+
+                <p>Anjali Apartment,Newtown</p>
+
+                <p>Post: Inda, Kharagpur</p>
+
+                <p>Dist : West Midnapur</p>
+
+                <p>PIN : 721305</p>
+
+                <p>West Bengal</p>
+            </div>
+            <div class="col-lg-5">
+
+                <img src="~/UploadImage/Logo_Pub.jpg" style="width:300px; height:300px" />
+            </div>
+            <div class="col-lg-1">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-1">
+
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Editorial_Team";
+}
+
+<div id="topbar" class="row wrapper border-bottom white-bg page-heading" style="border-bottom: 0px solid #e7eaec !important">
+    <h2>Widgets</h2>
+    <ol class="breadcrumb">
+        @*<li>
+                <a href="index.html">Home</a>
+            </li>*@
+        @*<li class="active">
+                <strong>Widgets</strong>
+            </li>*@
+    </ol>
+</div>
+<div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10">
+        @if (@ViewBag.EITORIAL_TEAM != null)
+        {
+            @ViewBag.EITORIAL_TEAM
+        }
+    </div>
+
+    <div class="col-lg-1">
+
+    </div>
+</div>

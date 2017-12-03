@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="International Journal of Medical Research and Practice" content="Welcome to International Journal of Medical Research and Practice (IntJMRP). IntJMRP is the broad spectrum, full text open access, peer reviewed medical journal. IntJMRP is a journal with wide scope of subjects including Basic Medical Science ">
+
+    <meta name="Keywords" content="ECODEV,intjmrp,Kharagpur,CALL FOR PAPER,Guide For Authors,International Journal of Medical Research and Practice,Submit Manuscript etc.">
+    <meta name="Guide For Authors" content="International Journal of Medical Research and Practice has agreed to receive manuscripts in accordance with the  uniform requirements for manuscripts submitted to biomedical journals">
+    <meta name="ECODEV" content="A professional NGO engage in Participatory planning For Health Natural Resource Management.Kharagpur ECODEV also started publishing scientific medical journal">
+    <meta name="Kharagpur ECODEV" content="A professional NGO engage in Participatory planning For Health Natural Resource Management.Kharagpur ECODEV also started publishing scientific medical journal">
+    <meta name="intjmrp" content="Welcome to International Journal of Medical Research and Practice (IntJMRP). IntJMRP is the broad spectrum, full text open access, peer reviewed medical journal. IntJMRP is a journal with wide scope of subjects including Basic Medical Science ">
+    <meta name="CALL FOR PAPER" content="Welcome to International Journal of Medical Research and Practice (IntJMRP). IntJMRP is the broad spectrum, full text open access, peer reviewed medical journal. IntJMRP is a journal with wide scope of subjects including Basic Medical Science ">
+
+
+    <meta name="ECODEV" content="A professional NGO engage in Participatory planning For Health Natural Resource Management.Kharagpur ECODEV also started publishing scientific medical journal">
+    <title>@ViewBag.Title</title>
+    @Scripts.Render("~/bundles/jquery")
+    @*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>*@
+
+    <script src="/js/plugins/wow/wow.min.js"></script>
+    
+    <link href="/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+
+        @*<title>INSPINIA - Landing Page</title>*@
+
+        <!-- Bootstrap core CSS -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Animation CSS -->
+        <link href="/css/animate.css" rel="stylesheet">
+        <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="/css/style.css" rel="stylesheet">
+    @*@Scripts.Render("~/bundles/jquery")*@
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="page-top" class="landing-page">
+    <div class="navbar-wrapper">
+        @*<div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+        </button>
+        <a class="navbar-brand" href="index.html">
+        </a>
+
+    </div>*@
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+
+                    </button>
+                    @*<a class="navbar-brand" href="index.html">*@
+                    @*</a>*@
+                    <img src="~/last_logo.png" style="width:400px;height:60px" />
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+
+                    <ul class="nav navbar-nav ">
+                        <li><a class="page-scroll" href="#" onclick="location.href='@Url.Action("Index", "Home")'">Home</a></li>
+                        <li><a class="page-scroll" href="#" onclick="location.href='@Url.Action("Editorial_Team", "Home")'">Editorial Board</a></li>
+                        @*<li><a class="page-scroll" href="#team">Team</a></li>*@
+                        <li><a class="page-scroll" href="#" onclick="location.href='@Url.Action("Current_Issue", "Home")'">Current Issue</a></li>
+                        <li><a class="page-scroll" href="#" onclick="location.href='@Url.Action("About_Publisher", "Home")'">About Publisher</a></li>
+                        <li>@*<a class="page-scroll" href="#">Subscription</a>*@</li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Others <span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="#" onclick="location.href='@Url.Action("About_journal", "Home")'">About Journal</a></li>
+
+                                <li><a href="#" onclick="location.href='@Url.Action("Archive", "Home")'">Archives</a></li>
+
+                                <li><a href="#" onclick="location.href='@Url.Action("Submit_Manuscripts", "Home")'">Submit Manuscript</a></li>
+
+                                <li><a href="#" onclick="location.href='@Url.Action("Guide_Author", "Home")'">Guide For Authors</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("Joinus", "Home")'">Join Us</a></li>
+                                <li><a href="#" onclick="location.href='@Url.Action("Subscription", "Home")'">Subscription</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="page-scroll" href="#" onclick="location.href='@Url.Action("ContuctUS", "Home")'">Contact Us</a></li>
+
+
+
+
+
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+        </nav>
+    </div>
+    
+                @*<div class="row"></div>*@
+
+
+                         @RenderBody()
+    <div class="row" style="height:300px">
+        <section id="contact" class="gray-section contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row m-b-lg">
+                            <div class="col-lg-12 text-center">
+                                <div class="navy-line"></div>
+                                @*<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>*@
+                            </div>
+                        </div>
+                        <br/>
+                        
+                        <br/>
+                        <br/>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <table style="width:100%">
+                            <tr>
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a class="page-scroll" href="#" onclick="location.href='@Url.Action("Index", "Home")'">Home</a></td>
+                                <td style=" padding: 15px; ">&nbsp;&nbsp;</td>
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a class="page-scroll" href="#" onclick="location.href='@Url.Action("About_Publisher", "Home")'">About Publisher</a></td>
+                                <td style=" padding: 15px; ">&nbsp;&nbsp;</td>
+
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a href="#" onclick="location.href='@Url.Action("About_journal", "Home")'">About Journal</a></td>
+
+
+                            </tr>
+                            <tr>
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a class="page-scroll" href="#" onclick="location.href='@Url.Action("Editorial_Team", "Home")'">Editorial Board</a></td>
+                                <td style=" padding: 15px; ">&nbsp;&nbsp;</td>
+
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a href="#" onclick="location.href='@Url.Action("Submit_Manuscripts", "Home")'">Submit Manuscript</a></td>
+                                <td style=" padding: 15px; ">&nbsp;&nbsp;</td>
+
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a href="#" onclick="location.href='@Url.Action("Guide_Author", "Home")'">Guide For Authors</a></td>
+
+
+                            </tr>
+                            <tr>
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a class="page-scroll" href="#" onclick="location.href='@Url.Action("Current_Issue", "Home")'">Current Issue</a></td>
+                                <td style=" padding: 15px; ">&nbsp;&nbsp;</td>
+
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a href="#" onclick="location.href='@Url.Action("Archive", "Home")'">Archives</a></td>
+                                <td style=" padding: 15px; ">&nbsp;&nbsp;</td>
+
+                                <td style=" padding: 15px; "><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+<a href="#" onclick="location.href='@Url.Action("Joinus", "Home")'">Join Us</a></td>
+
+
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-lg-5">
+
+                        <div class="row m-b-lg">
+                            <div class="col-lg-12 text-center">
+                                <div class="navy-line"></div>
+                                <h1>Contact Us</h1>
+                                @*<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>*@
+                            </div>
+                        </div>
+                        <div class="row m-b-lg">
+                            <div class="col-lg-12  col-lg-offset-4">
+                                <address>
+                                    <strong><span class="navy">&nbsp;IntJMRP</span></strong><br />
+                                    <br />
+                                    <p><strong><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;<a href="tel:%2B91%208116255353" target="_blank">+91 8116255353</a></strong></p>
+
+                                    <p><strong><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;<a href="tel:%2B91%209433457247" target="_blank">+91 9433457247</a></strong></p>
+
+                                    <p><strong><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:ijmrpeditorial@gmail.com" target="_blank">ijmrpeditorial@gmail.com</a></strong></p>
+                                    <p><strong><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;<a href="mailto:submission@intjmrp.com" target="_blank">submission@intjmrp.com</a></strong></p>
+
+                                </address>
+                            </div>
+                            @*<div class="col-lg-4">
+                                    <p class="text-color">
+                                        Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,
+                                    </p>
+                                </div>*@
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <a href="mailto:submission@intjmrp.com" class="btn btn-primary">Send us mail</a>
+                                <p class="m-t-sm">
+                                    Or follow us on social platform
+                                </p>
+                                <ul class="list-inline social-icon">
+                                    @*<li>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>*@
+                                    <li>
+                                        <a href="https://www.facebook.com/International-Journal-of-Medical-Science-and-Practice-1003844139664308/"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                        <p><strong>Copyright</strong> © @DateTime.Now.Year International Journal of Medical Research and Practice (IntJMRP) All rights reserved.<br /> <small>Website Devloped By &nbsp;<a href="http://profunia.com/" target="_blank">ProFunia Technologies</a> </small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+                         @*@Scripts.Render("~/bundles/jquery")*@
+                         @RenderSection("scripts", required: false)
+
+
+
+
+
+
+
+                         <!-- Mainly scripts -->
+                         @*<script src="/js/jquery-2.1.1.js"></script>*@
+                         <script src="/js/bootstrap.min.js"></script>
+                         <script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                         <script src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+                         <!-- Custom and plugin javascript -->
+                         <script src="/js/inspinia.js"></script>
+                         <script src="/js/plugins/pace/pace.min.js"></script>
+                         @*<script src="/js/plugins/wow/wow.min.js"></script>*@
+
+
+                         <script>
+
+                             $(document).ready(function () {
+
+                                 $('body').scrollspy({
+                                     target: '.navbar-fixed-top',
+                                     offset: 80
+                                 });
+
+                                 // Page scrolling feature
+                                 $('a.page-scroll').bind('click', function (event) {
+                                     var link = $(this);
+                                     $('html, body').stop().animate({
+                                         scrollTop: $(link.attr('href')).offset().top - 50
+                                     }, 500);
+                                     event.preventDefault();
+                                     $("#navbar").collapse('hide');
+                                 });
+                             });
+
+                             var cbpAnimatedHeader = (function () {
+                                 var docElem = document.documentElement,
+                                         header = document.querySelector('.navbar-default'),
+                                         didScroll = false,
+                                         changeHeaderOn = 200;
+                                 function init() {
+                                     window.addEventListener('scroll', function (event) {
+                                         if (!didScroll) {
+                                             didScroll = true;
+                                             setTimeout(scrollPage, 250);
+                                         }
+                                     }, false);
+                                 }
+                                 function scrollPage() {
+                                     var sy = scrollY();
+                                     if (sy >= changeHeaderOn) {
+                                         $(header).addClass('navbar-scroll')
+                                     }
+                                     else {
+                                         $(header).removeClass('navbar-scroll')
+                                     }
+                                     didScroll = false;
+                                 }
+                                 function scrollY() {
+                                     return window.pageYOffset || docElem.scrollTop;
+                                 }
+                                 init();
+
+                             })();
+
+                             // Activate WOW.js plugin for animation on scrol
+                             new WOW().init();
+
+                         </script>
+
+    <script src="/js/plugins/sweetalert/sweetalert.min.js"></script>
+
+</body>
+</html>
+
